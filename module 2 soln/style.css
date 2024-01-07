@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.section-box {
+    background-color: #eaeaea;
+    color: #333;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    float: left;
+    width: 48%; /* Default width for tablet view */
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.section-box h3 {
+    margin-top: 0;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .section-box {
+        width: 31.33%; /* Each section takes up equal space on the desktop */
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-box {
+        width: 50%; /* First two sections in the first row are of equal size */
+    }
+
+    .section-box:nth-child(odd) {
+        clear: both; /* Clear the float for the third section to move it to the second row */
+        width: 100%; /* Third section takes up the entire row in the second row */
+    }
+}
+
+
+
+
+
+
+
+
