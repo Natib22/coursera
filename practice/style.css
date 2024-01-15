@@ -1,0 +1,19 @@
+body {
+    font-size: 16px;
+    background-color: #61122f;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#header-nav{
+    background-color: #f6b319;
+    border-radius: 0px;
+    border: 0;
+}
+#logo-img {
+    background: url(logo.avif);
+    background-size: cover; /* or background-size: contain; depending on your needs */
+    height: 100px; /* set an appropriate height */
+    width: 100px; /* set an appropriate width */
+    /* You can add more styles if needed */
+    border-radius: 100%;
+}
